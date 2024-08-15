@@ -12,6 +12,7 @@ function App() {
   function handleToggle(tabSelected){
     setToggleModal((prevState) => {
       return {
+        ...prevState,
         toggle: !prevState.toggle,
         tab: tabSelected
       }

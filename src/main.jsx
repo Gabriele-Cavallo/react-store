@@ -5,8 +5,10 @@ import './index.scss';
 import App from './App.jsx';
 import Error from './pages/Error.jsx';
 import Home from './pages/Home.jsx';
-import Products from './pages/Products.jsx';
-import { loader as productsFetch } from './pages/Products.jsx';
+import Games from './pages/Games.jsx';
+import GameDetails from './pages/GameDetails.jsx';
+import { loader as gamesFetch } from './pages/Games.jsx';
+import { loader as gameFetch } from './pages/GameDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,9 +21,14 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'products',
-        element: <Products />,
-        loader: productsFetch
+        path: 'games',
+        element: <Games />,
+        loader: gamesFetch
+      },
+      {
+        path: 'games/:gameId',
+        element: <GameDetails />,
+        loader: gameFetch,
       },
     ]
   }

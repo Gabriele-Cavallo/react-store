@@ -17,7 +17,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-img{
+h1{
+  text-transform: uppercase;
+}
+
+header img{
   filter: drop-shadow(0 0 10px greenyellow);
 }
 
@@ -43,12 +47,13 @@ a{
   height: 100vh;
 }
 
-#products {
+#games {
   padding: 20px;
   ul{
     margin-right: -20px;
-    li{
-      width: calc((100% / 6) - 20px);
+    #list-item{
+      overflow: hidden;
+      width: calc((100% / 4) - 20px);
       &:hover{
         box-shadow: 0 0 50px greenyellow;
         transform: scale(1.2);
@@ -57,6 +62,8 @@ a{
     }
   }
 }
+
+
 
 
 
