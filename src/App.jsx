@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import Header from './components/Header'
 import { useState } from 'react'
 import Modal from './components/Modal';
+import Footer from './components/Footer';
 
 function App() {
   const [toggleModal, setToggleModal] = useState({
@@ -24,6 +25,7 @@ function App() {
       <Modal tab={toggleModal.tab} onClose={handleToggle} open={toggleModal.toggle} />
       <Header openModal={handleToggle}/>
       <Outlet />
+      <Footer />
     </>
   )
 }

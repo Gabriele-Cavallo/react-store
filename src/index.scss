@@ -15,8 +15,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
 }
 
+header{
+  top: 0;
+  z-index: 2;
+}
 h1{
   text-transform: uppercase;
 }
@@ -63,6 +69,11 @@ a{
   }
 }
 
+footer {
+  text-transform: uppercase;
+  position: sticky;
+  bottom: 0;
+}
 
 
 

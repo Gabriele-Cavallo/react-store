@@ -7,3 +7,4 @@ Tools utilizzati:
 - Tailwind
 - React Router
 - Sass
+- RAWG API
