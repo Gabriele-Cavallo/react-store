@@ -6,6 +6,7 @@ import App from './App.jsx';
 import Error from './pages/Error.jsx';
 import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
+import { loader as productsFetch } from './pages/Products.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'products',
-        element: <Products />
+        element: <Products />,
+        loader: productsFetch
       },
     ]
   }

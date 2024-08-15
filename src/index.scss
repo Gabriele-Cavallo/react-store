@@ -43,5 +43,21 @@ a{
   height: 100vh;
 }
 
+#products {
+  padding: 20px;
+  ul{
+    margin-right: -20px;
+    li{
+      width: calc((100% / 6) - 20px);
+      &:hover{
+        box-shadow: 0 0 50px greenyellow;
+        transform: scale(1.2);
+        transition: all 1s ease;
+      }
+    }
+  }
+}
+
+
 
 
