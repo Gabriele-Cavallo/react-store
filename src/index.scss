@@ -17,3 +17,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+img{
+  filter: drop-shadow(0 0 10px greenyellow);
+}
+
+a{
+  font-size: 20px;
+  font-weight: bold;
+  &.active{
+    text-decoration: underline;
+  }
+}
+
+
+
