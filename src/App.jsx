@@ -4,15 +4,23 @@ import { useState } from 'react'
 import Modal from './components/Modal';
 
 function App() {
-  const [toggleModal, setToggleModal] = useState(false);
+  const [toggleModal, setToggleModal] = useState({
+    toggle: false,
+    tab: ''
+  });
 
-  function handleToggle(){
-    setToggleModal((prevState) => !prevState)
+  function handleToggle(tabSelected){
+    setToggleModal((prevState) => {
+      return {
+        toggle: !prevState.toggle,
+        tab: tabSelected
+      }
+    })
   }
 
   return (
     <>
-      <Modal onClose={handleToggle} open={toggleModal} />
+      <Modal tab={toggleModal.tab} onClose={handleToggle} open={toggleModal.toggle} />
       <Header openModal={handleToggle}/>
       <Outlet />
     </>

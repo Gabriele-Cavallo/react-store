@@ -1,8 +1,10 @@
 import { createPortal } from "react-dom";
 import Button from "./Button";
 import { useEffect, useRef } from "react";
+import RegisterForm from "./RegisterForm";
+import LoginForm from "./LoginForm";
 
-export default function Modal({children, open, onClose}) {
+export default function Modal({open, onClose, tab}) {
     const dialog = useRef();
 
     useEffect(() => {
@@ -15,10 +17,12 @@ export default function Modal({children, open, onClose}) {
 
     return createPortal(
         <dialog onClose={onClose} ref={dialog} className="backdrop:bg-indigo-600 backdrop:opacity-50 modal border-2 border-orange-600 rounded-md py-5 px-10">
-            <h1>Ciao sono una modale</h1>
-            {children}
-            <form className="flex justify-end mt-5" method="dialog">
-                <Button>Close</Button>
+            <form className="mt-5" method="dialog">
+                {tab === 'registrati' && <RegisterForm />}
+                {tab === 'login' && <LoginForm />}
+                <div className="mt-4 flex flex-row-reverse">
+                    <Button>Close</Button>
+                </div>
             </form>
         </dialog>,
         document.getElementById('modal')

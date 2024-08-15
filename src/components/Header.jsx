@@ -16,8 +16,8 @@ export default function Header({openModal}) {
                 </ul>
             </nav>
             <menu className="gap-5 flex">
-                <Button openModal={openModal}>Registrati</Button>
-                <Button openModal={openModal}>Login</Button>
+                <Button openModal={() => openModal('registrati')}>Registrati</Button>
+                <Button openModal={() => openModal('login')}>Login</Button>
             </menu>
         </header>
     )
