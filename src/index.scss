@@ -19,6 +19,13 @@
   overflow-x: hidden;
 }
 
+section{
+  padding: 50px 0;
+  > *{
+    margin: 0 auto;
+  }
+}
+
 header{
   top: 0;
   z-index: 10;
@@ -48,7 +55,13 @@ a{
   width: 100%;
   height: 100vh;
 }
-
+main{
+  background-image: url('https://images.unsplash.com/photo-1690743212282-e1e4f6fd02f8?q=80&w=4214&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
 #games {
   padding: 20px;
   margin: 0 auto;

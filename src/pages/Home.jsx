@@ -1,5 +1,12 @@
+import Main from "../components/Main";
+import TopGames from "../components/TopGames";
+
 export default function Home() {
     return (
-        <h1>Ciao sono la home</h1>
+        <>
+            <Main>
+                <TopGames />
+            </Main>
+        </>
     )
 }
