@@ -83,6 +83,14 @@ main{
     margin: 0 auto;
   }
 }
+.tag-img{
+  height: 24px;
+  width: 24px;
+  object-fit: cover;
+  &.ps{
+    filter: invert(100%);
+  }
+}
 
 footer {
   text-transform: uppercase;
