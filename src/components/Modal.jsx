@@ -16,7 +16,7 @@ export default function Modal({open, onClose, tab}) {
     }, [open])
 
     return createPortal(
-        <dialog onClose={onClose} ref={dialog} className="backdrop:bg-indigo-600 backdrop:opacity-50 modal border-2 border-orange-600 rounded-md py-5 px-10">
+        <dialog onClose={onClose} ref={dialog} className="backdrop:bg-slate-600 bg-slate-700 backdrop:opacity-50 modal border-2 border-slate-900 rounded-md py-5 px-10">
             <form className="mt-5" method="dialog">
                 {tab === 'registrati' && <RegisterForm />}
                 {tab === 'login' && <LoginForm />}

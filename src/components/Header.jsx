@@ -11,7 +11,7 @@ export default function Header({openModal}) {
                         <NavLink className={({isActive}) => isActive ? 'text-slate-700 active' : 'text-slate-200'} to="/" end>Home</NavLink> 
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => isActive ? 'text-slate-900 active' : 'text-slate-200'} to="games">Games</NavLink> 
+                        <NavLink className={({isActive}) => isActive ? 'text-slate-900 active' : 'text-slate-200'} to="games" end>Games</NavLink> 
                     </li>
                 </ul>
             </nav>

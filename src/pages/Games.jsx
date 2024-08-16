@@ -8,9 +8,9 @@ export default function Games() {
     return (
         <section id="games" className="max-w-[80%] rounded-lg">
             <h1 className="text-center mb-5 text-3xl font-bold text-slate-200">Ecco i nostri giochi</h1>
-            <ul className="flex flex-wrap gap-5">
+            <ul className="grid grid-cols-4 gap-5">
                 {games.map(item => (
-                    <Link to={`/games/${item.id}`} id="list-item" className="rounded-3xl bg-slate-900 overflow-hidden" key={item.id}>
+                    <Link to={`/games/${item.id}`} className="list-item rounded-3xl bg-slate-900 overflow-hidden" key={item.id}>
                         <Card item={item} />
                     </Link>
                 ))}

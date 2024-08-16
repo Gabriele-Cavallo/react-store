@@ -37,7 +37,7 @@ a{
 
 .modal{
   z-index: 2;
-  box-shadow: 0 0 50px greenyellow;
+  box-shadow: 0 0 50px #991b1b;
 }
 
 .modal::backdrop {
@@ -53,19 +53,21 @@ a{
   padding: 20px;
   margin: 0 auto;
   ul{
-    margin-right: -20px;
-    #list-item{
+    .list-item{
       overflow: hidden;
-      width: calc((100% / 4) - 20px);
-      position: relative;
       transition: all 1s ease;
-      max-height: 272px;
       &:hover{
         transform: scale(1.2);
         box-shadow: 0 0 50px #991b1b;
         z-index: 2;
       }
     }
+  }
+}
+
+#game-details{
+  img{
+    margin: 0 auto;
   }
 }
 
