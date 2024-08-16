@@ -6,11 +6,11 @@ export default function Games() {
     const {games} = useLoaderData();
 
     return (
-        <section id="games" className="m-5 rounded-lg">
-            <h1 className="text-center mb-5 text-3xl font-bold text-[greenyellow]">Ecco i nostri giochi</h1>
+        <section id="games" className="max-w-[80%] rounded-lg">
+            <h1 className="text-center mb-5 text-3xl font-bold text-slate-200">Ecco i nostri giochi</h1>
             <ul className="flex flex-wrap gap-5">
                 {games.map(item => (
-                    <Link to={`/games/${item.id}`} id="list-item" className="border-[3px] border-orange-600 rounded-md p-3 bg-indigo-600 overflow-hidden" key={item.id}>
+                    <Link to={`/games/${item.id}`} id="list-item" className="rounded-3xl bg-slate-900 overflow-hidden" key={item.id}>
                         <Card item={item} />
                     </Link>
                 ))}

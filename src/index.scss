@@ -21,14 +21,10 @@
 
 header{
   top: 0;
-  z-index: 2;
+  z-index: 10;
 }
 h1{
   text-transform: uppercase;
-}
-
-header img{
-  filter: drop-shadow(0 0 10px greenyellow);
 }
 
 a{
@@ -55,15 +51,19 @@ a{
 
 #games {
   padding: 20px;
+  margin: 0 auto;
   ul{
     margin-right: -20px;
     #list-item{
       overflow: hidden;
       width: calc((100% / 4) - 20px);
+      position: relative;
+      transition: all 1s ease;
+      max-height: 272px;
       &:hover{
-        box-shadow: 0 0 50px greenyellow;
         transform: scale(1.2);
-        transition: all 1s ease;
+        box-shadow: 0 0 50px #991b1b;
+        z-index: 2;
       }
     }
   }
@@ -73,6 +73,7 @@ footer {
   text-transform: uppercase;
   position: sticky;
   bottom: 0;
+  z-index: 10;
 }
 
 
