@@ -8,3 +8,4 @@ Tools utilizzati:
 - React Router
 - Sass
 - RAWG API
+- EMBLA Carousel
