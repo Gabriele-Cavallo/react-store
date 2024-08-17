@@ -1,10 +1,11 @@
 import psLogo from '../../public/ps.png';
 import pcLogo from '../../public/pc.png';
 import xboxLogo from '../../public/xbox.png';
+import { Link } from 'react-router-dom';
 
 export default function RatedGame({game}) {
     return (
-        <li className="list-item rounded-3xl bg-slate-900 overflow-hidden">
+        <Link to={`games/${game.id}`} className="list-item rounded-3xl bg-slate-900 overflow-hidden">
             <div className="img-wrapper relative">
                 <img className="w-full" src={game.background_image} alt={game.name} />
                 <small className="absolute bottom-[20px] text-slate-200 bg-slate-900 rounded-md px-3 left-5">Punteggio: {game.rating}⭐</small>
@@ -28,6 +29,6 @@ export default function RatedGame({game}) {
                 </div>
                 <div className="text-slate-200"><strong>Release date</strong>: {game.released}</div>
             </div>
-        </li>
+        </Link>
     )
 }
