@@ -19,6 +19,17 @@
   overflow-x: hidden;
 }
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  #modal dialog{
+   margin: 0 auto;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+}
+
 section{
   padding: 50px 0;
   > *{

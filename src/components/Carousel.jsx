@@ -51,7 +51,7 @@ export default function Carousel(){
     return (
         <section id="carousel" className=" py-10 bg-slate-900">  
             <div className="max-w-[90%]">
-                <h2 className="text-center font-bold mb-5 text-slate-200 text-3xl">Scegli la tua categoria preferita</h2>
+                <h2 className="text-center font-bold mb-5 uppercase text-slate-200 text-3xl">Scegli la tua categoria preferita</h2>
                 <Categories isSelected={categoryGame} selectCategory={handleCategorie} />
                 <div className="embla" ref={emblaRef}>
                     <ul className="embla__container">
@@ -62,15 +62,15 @@ export default function Carousel(){
                         </Link>)}
                     </ul>
                 </div>
-                <div className="flex justify-center gap-10 mx-5">
+                <div className="flex justify-center gap-10 mt-3 mx-5">
                     <button className="embla__prev bg-slate-400 rounded-[50%] text-red-800 p-4" onClick={scrollPrev}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                         </svg>
                     </button>
                     <button className="embla__next bg-slate-400 rounded-[50%] text-red-800 p-4" onClick={scrollNext}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
                     </button>
                 </div>
