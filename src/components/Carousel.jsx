@@ -56,15 +56,23 @@ export default function Carousel(){
                 <div className="embla" ref={emblaRef}>
                     <ul className="embla__container">
                         {categoryGames.map(game => 
-                        <Link to={`games/${game.id}`} end key={game.id}>
+                        <Link to={`games/${game.id}`} key={game.id}>
                             <img className="w-full h-[250px] rounded-lg border-4 border-slate-900" src={game.background_image} alt={game.name} />
-                            <h2 className="text-slate-200 mb-4 font-bold text-2xl text-center">{game.name}</h2>
+                            <h2 className="text-slate-200 font-bold text-2xl text-center">{game.name}</h2>
                         </Link>)}
                     </ul>
                 </div>
-                <div className="flex justify-between m-5">
-                    <button className="embla__prev bg-slate-900 rounded-[50%] p-4" onClick={scrollPrev}>Prev</button>
-                    <button className="embla__next bg-slate-900 rounded-[50%] p-4" onClick={scrollNext}>Next</button>
+                <div className="flex justify-center gap-10 mx-5">
+                    <button className="embla__prev bg-slate-400 rounded-[50%] text-red-800 p-4" onClick={scrollPrev}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                        </svg>
+                    </button>
+                    <button className="embla__next bg-slate-400 rounded-[50%] text-red-800 p-4" onClick={scrollNext}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
