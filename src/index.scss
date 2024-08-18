@@ -81,7 +81,7 @@ main{
       overflow: hidden;
       transition: all 0.5s ease;
       &:hover{
-        transform: scale(1.2);
+        // transform: scale(1.2);
         box-shadow: 0 0 50px #991b1b;
         z-index: 2;
       }
@@ -133,6 +133,10 @@ footer {
     padding: 0 20px;
   }
   
+}
+
+input{
+  // color: #242424;
 }
 
 

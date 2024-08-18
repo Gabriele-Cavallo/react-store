@@ -23,8 +23,8 @@ export default function Modal() {
             <form className="mt-5" method="dialog">
                 {modalCtx.tabSelectedCtx.tab === 'registrati' && <RegisterForm />}
                 {modalCtx.tabSelectedCtx.tab === 'login' && <LoginForm />}
-                {modalCtx.tabSelectedCtx.tab === 'newsletter' && <p className="text-2xl text-slate-200 font-bold">Complimenti, ti sei iscritto alla nostra newsletter!!!</p>}
-                {modalCtx.tabSelectedCtx.tab === 'error' && <p className="text-2xl text-slate-200 font-bold">I valori inseriti non sono validi!!!</p>}
+                {modalCtx.tabSelectedCtx.tab === 'newsletter' && <p className="text-2xl text-slate-200 font-bold">Complimenti, ti sei iscritto alla nostra newsletter !!!</p>}
+                {modalCtx.tabSelectedCtx.tab === 'error' && <p className="text-2xl text-slate-200 font-bold">I valori inseriti non sono validi !!!</p>}
                 <div className="mt-4 flex flex-row-reverse">
                     <Button>Close</Button>
                 </div>
